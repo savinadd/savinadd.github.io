@@ -2,29 +2,45 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="flex flex-wrap w-full h-screen px-40">
+    <section id="about">
+    <div className="flex flex-wrap w-full h-700 px-20 font-sora">
       <div className="w-full md:w-1/2 p-6">
-        <h1 className="text-5xl font-bold mb-4 text-red-100 pt-3">About Me</h1>
-        <p className="text-red-100 text-2xl mb-4">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae optio, ullam recusandae maxime repudiandae adipisci dolorum distinctio eum laborum sed dolor rem soluta voluptates fugit, ratione velit ab inventore aliquid!
+        <h1 className="text-3xl font-bold mb-4 text-[#F5FBEF] pt-3">About Me</h1>
+        <p className="text-[#E9D8E4] text-lg mb-4">
+          Hello, my name is Savina! I am a second year student double
+          majoring in Computer Science and Mathematics. My interest in
+          programming started back in the early years of high school, 
+          when I joined a club for women in STEM careers. Since then, 
+          my curiosity has guided me toward the software development field, 
+          specifically focusing on Back-End development. However, my recent
+          projects have pushed me into the land of Front-End development, 
+          with most of my experience as of now being in React. 
         </p>
-        <p className="text-red-100 text-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, magni magnam. Consectetur optio excepturi, enim debitis nobis placeat modi esse pariatur obcaecati, eum provident eius aut. Cum dolore mollitia magnam!
+        <p className="text-[#F0E9E5] text-lg">
+          As a student in college, I have gotten quite the lesson in time 
+          management. After being on the tail end of my second year of college, 
+          I can say that I finally managed to figure out how to be able to manage 
+          my time between the Computer Science and Math classes, 3 clubs, and 
+          working on side projects like this one. 
+        </p>
+        <p className="text-[#F0E9E5] text-lg">
+          I am currently on the hunt for a part-time junior developer position or 
+          an internship, with no preference on back or front end development.
         </p>
         <div className="mt-6 pt-6">
-          <a href='SavinaDimitrovResume.pdf' download className="bg-[#864879] text-red-100 text-lg hover:bg-[#3F3351]  font-bold py-2 px-4  rounded-full ">
+          <a href='SavinaDimitrovResume.pdf' download className="bg-[#864879] text-red-100 text-lg hover:bg-[#645280]  font-bold py-2 px-4  rounded-full ">
             Download CV
           </a>
-          <a href="https://www.linkedin.com/in/savinadimitrov/" target="_blank" rel="noopener noreferrer" className="ml-4 bg-[#864879] hover:bg-[#3F3351]  text-red-100 text-lg font-bold py-2 px-4 rounded-full">
+          <a href="https://www.linkedin.com/in/savinadimitrov/" target="_blank" rel="noopener noreferrer" className="ml-4 bg-[#864879] hover:bg-[#645280]  text-red-100 text-lg font-bold py-2 px-4 rounded-full">
             Connect on LinkedIn
           </a>
         </div>
       </div>
-      <div className="w-full md:w-1/2 ">
+      <div className="w-full md:w-1/2 pt-40 ">
         <img src='heroImage.png' alt='Portrait of Savina' className="pl-20 "></img>
       </div>
     </div>
-      
+    </section>
   );
 };
 

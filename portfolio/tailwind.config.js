@@ -1,9 +1,17 @@
 /** @type {import('tailwindcss').Config} */
+
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      tajawal: ['Tajawal', 'sans-serif'],
+      hind: ['Hind', 'sans-serif'],
+      zillaSlab: ['Zilla Slab', 'sans-serif'],
+      sora: ['Sora', 'sans-serif'],
+    },
     extend: {
       animation: {
         text: 'text 5s ease infinite',

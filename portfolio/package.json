@@ -19,6 +19,7 @@
     "react-routes": "^0.2.6",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
+    "react-svg": "^16.1.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

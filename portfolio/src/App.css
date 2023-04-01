@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Sono&display=swap');
+
 .App {
   text-align: center;
 }
@@ -13,7 +15,8 @@
   }
 }
 body {
-  background: #0A043C;
+  background: #04052E;
+
 }
 
 .App-header {
