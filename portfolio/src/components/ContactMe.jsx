@@ -44,10 +44,10 @@ function ContactMe(){
 
 return (
   <section id='contact'>
-    <div className="flex items-center min-h-screen dark:bg-gray-900 font-sora">
-      <div className="container mx-auto">
-        <div className="max-w-md mx-auto my-10 p-5 rounded-md bg-white  hover:shadow-white shadow-lg">
-          <div className="text-center">
+     <div className="flex min-h-screen dark:bg-gray-900 font-sora">
+        <div className="container flex flex-col w-fit mx-auto px-4 sm:px-0 ">
+          <div className="max-w-md mx-auto my-10 p-5 rounded-md bg-white hover:shadow-white shadow-lg">
+            <div className="text-center">
             <h1 className="my-3 text-3xl font-semibold text-[#864879] dark:text-gray-200">Contact Me</h1>
             <p className="text-[#864879] dark:text-gray-400">If you would like to get in contact with me, fill out the form below!</p>
           </div>

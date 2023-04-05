@@ -1,42 +1,51 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 
-function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <nav className="flex justify-end font-sora">
-      <div className="flex items-left flex-col justify-between w-full max-w-6xl px-4 py-3 mx-auto md:px-6 lg:px-8">
-        <div className="hidden md:flex justify-end">
-          <Link to="home" spy={true} smooth={true} className="mr-4  text-red-100 hover:text-[#CFD6EA] cursor-pointer">Home</Link>
-          <Link to="about" spy={true} smooth={true} className="mr-4  text-red-100 hover:text-[#CFD6EA] cursor-pointer">About</Link>
-          <Link to="portfolio" spy={true} smooth={true} className="mr-4  text-red-100 hover:text-[#CFD6EA] cursor-pointer">Portfolio</Link>
-          <Link to="contact" spy={true} smooth={true} className=" text-red-100 hover:text-[#CFD6EA] cursor-pointer">Contact Me</Link>
-        </div>
-        <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="block text-gray-400 hover:text-white focus:text-white focus:outline-none">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              {isOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
-        </div>
+    <nav className="text-red-100 text-2xl p-4 flex flex-row-reverse justify-end items-center md:justify-start font-sora">
+      <ul className="hidden md:flex ml-auto">
+        <li className="mx-4 cursor-pointer">
+          <Link to="home" smooth={true} duration={500}>Home</Link>
+        </li>
+        <li className="mx-4 cursor-pointer">
+          <Link to="about" smooth={true} duration={500}>About Me</Link>
+        </li>
+        <li className="mx-4 cursor-pointer">
+          <Link to="portfolio" smooth={true} duration={500}>Portfolio</Link>
+        </li>
+        <li className="mx-4 cursor-pointer">
+          <Link to="contact" smooth={true} duration={500}>Contact Me</Link>
+        </li>
+      </ul>
+      <div className="md:hidden">
+        <button className="flex items-center" onClick={() => setShowMenu(!showMenu)}>
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        {showMenu && (
+          <ul className="text-white text-2xl sticky top-0 right-0 w-full">
+            <li className="mx-4 py-2 border-b border-white hover:cursor-pointer">
+              <Link to="home" smooth={true} duration={500} onClick={() => setShowMenu(false)}>Home</Link>
+            </li>
+            <li className="mx-4 py-2 border-b border-white">
+              <Link to="about" smooth={true} duration={500} onClick={() => setShowMenu(false)}>About Me</Link>
+            </li>
+            <li className="mx-4 py-2 border-b border-white">
+              <Link to="portfolio" smooth={true} duration={500} onClick={() => setShowMenu(false)}>Portfolio</Link>
+            </li>
+            <li className="mx-4 py-2">
+              <Link to="contact" smooth={true} duration={500} onClick={() => setShowMenu(false)}>Contact Me</Link>
+            </li>
+          </ul>
+        )}
       </div>
-      {isOpen && (
-        <div className="px-4 pt-2 pb-4 md:hidden">
-          <Link to="home" spy={true} smooth={true} onClick={() => setIsOpen(false)} className="block font-mono text-red-100 hover:text-white cursor-pointer mb-2">Home</Link>
-          <Link to="about" spy={true} smooth={true} onClick={() => setIsOpen(false)} className="block font-mono text-red-100 hover:text-white cursor-pointer mb-2">About</Link>
-          <Link to="portfolio" spy={true} smooth={true} onClick={() => setIsOpen(false)} className="block font-mono text-red-100 hover:text-white cursor-pointer mb-2">Portfolio</Link>
-          <Link to="contact" spy={true} smooth={true} onClick={() => setIsOpen(false)} className="block font-mono text-red-100 hover:text-white cursor-pointer">Contact Me</Link>
-        </div>
-      )}
     </nav>
   );
-}
+};
 
 export default Navbar;
-
 

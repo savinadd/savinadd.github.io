@@ -3,12 +3,12 @@ import React from 'react'
 const Home = () => {
     return(
       <section id="home">
-        <header className=" flex justify-center  px-20">
-        <div className="max-w-7xl w-full sm:px-6 lg:px-8 flex flex-col justify-center h-screen ">
+        <header className="flex justify-center font-sora">
+        <div className="max-w-7xl w-full sm:px-6 flex flex-col justify-center h-screen ">
           <div className=" pr-25 ">
-            <h1 className="text-5xl font-bold pb-5 animate-text bg-gradient-to-r from-[#E9A6A6] via-purple-400 to-[#0E8388] bg-clip-text text-transparent">Hello and welcome!</h1>
+            <h1 className="text-5xl font-bold pb-5 font-sora animate-text bg-gradient-to-r from-[#E9A6A6] via-purple-400 to-[#0E8388] bg-clip-text text-transparent">Hello and welcome!</h1>
             <header className="mb-16 group">
-              <h1 className="mb-1 font=mono text-4xl text-gray-100 md:text-6xl">
+              <h1 className="mb-1 font-sora text-4xl font-mono text-gray-100 md:text-6xl">
                 <span className="inline-flex h-20 pt-3 overflow-x-hidden animate-type group-hover:animate-type-reverse whitespace-nowrap text-brand-accent will-change-transform">
                   i'm savina 👋
                 </span>

@@ -5,16 +5,16 @@ import { SiCplusplus, SiJsonwebtokens } from "react-icons/si";
 const Portfolio = () => {
   return (
     <section id="portfolio">
-    <div className="flex px-20 font-sora">
-      <div className="max-w-7xl mx-auto pt-20 px-4 sm:px-6 lg:px-8 pb-20 ">
-        <div className="text-center">
+    <div className="px-5 sm:px-10 md:px-20 font-sora">
+        <div className="max-w-7xl mx-auto pt-20 pb-10">
+          <div className="text-center">
           <h2 className="text-3xl font-extrabold text-red-100 sm:text-4text-mdxl">Portfolio</h2>
           <p className="mt-4 max-w-2xl text-xl text-red-100 mx-auto">
             Here are some of the projects I've worked on recently
           </p>
         </div>
         <div className="mt-10">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 h-300">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 h-300 flex-wrap: wrap;">
             <div className="bg-white overflow-hidden shadow rounded-lg flex flex-col h-full">
             <div className="p-5 flex-grow">
                 <h3 className="text-base font-medium text-gray-900 pb-2">Carwashing Application</h3>
@@ -35,10 +35,10 @@ const Portfolio = () => {
                     </p>
                 </div>
                 <div className="bg-gray-50 px-5 py-3 flex-shrink-0 flex justify-end">
-                    <a href="https://github.com/savinadd/CarWashing-System" className="bg-[#864879] text-red-100 scale-95 hover:scale-105 text-lg hover:bg-[#645280] py-2 px-4  rounded-full ">View project</a>
+                    <a href="https://github.com/savinadd/CarWashing-System" className="bg-[#864879] text-red-100 text-center scale-95 hover:scale-105 text-lg hover:bg-[#645280] py-2 px-4  rounded-full ">View project</a>
                 </div>
             </div>
-            <div className="bg-white overflow-hidden shadow rounded-lg flex flex-col h-full overflow-hidden">
+            <div className="bg-white shadow rounded-lg flex flex-col h-full overflow-hidden">
             <div className="p-5 flex-grow">
                  <h3 className="text-base font-medium text-gray-900 pb-2">Database Connection Pool </h3>
                     <div className="flex display-inline">
@@ -51,7 +51,7 @@ const Portfolio = () => {
                      </p>
                 </div>
                 <div className="bg-gray-50 px-5 py-3 flex-shrink-0 flex justify-end">
-                <a href="https://github.com/savinadd/DBConnectionPool" className=" bg-[#864879] text-red-100 scale-95 hover:scale-105 text-lg hover:bg-[#645280] py-2 px-4  rounded-full  ">View project</a>
+                <a href="https://github.com/savinadd/DBConnectionPool" className=" bg-[#864879] text-center text-red-100 scale-95 hover:scale-105 text-lg hover:bg-[#645280] py-2 px-4  rounded-full  ">View project</a>
               </div>
             </div>
             <div className="bg-white overflow-hidden shadow rounded-lg flex flex-col h-full">
@@ -67,7 +67,7 @@ const Portfolio = () => {
                     </p>
               </div>
               <div className="bg-gray-50 px-5 py-3 flex-shrink-0 flex justify-end">
-                <a href="https://github.com/savinadd/Portfolio-Website" className="bg-[#864879] text-red-100 scale-95 hover:scale-105 text-lg hover:bg-[#645280] py-2 px-4  rounded-full ">View project</a>
+                <a href="https://github.com/savinadd/Portfolio-Website" className="bg-[#864879] text-red-100 text-center scale-95 hover:scale-105 text-lg hover:bg-[#645280] py-2 px-4  rounded-full ">View project</a>
               </div>
             </div>
             
@@ -90,7 +90,7 @@ const Portfolio = () => {
                     </p>
                 </div>
                 <div className="bg-gray-50 px-5 py-3 flex-shrink-0 flex justify-end">
-                    <a href="https://github.com/savinadd/FDS-Course-Project" className="bg-[#864879] text-red-100 scale-95 hover:scale-105 text-lg hover:bg-[#645280] py-2 px-4  rounded-full  ">View project</a>
+                    <a href="https://github.com/savinadd/FDS-Course-Project" className="bg-[#864879] text-red-100 text-center scale-95 hover:scale-105 text-lg hover:bg-[#645280] py-2 px-4  rounded-full  ">View project</a>
                 </div>
             </div>
             <div className="bg-white overflow-hidden shadow rounded-lg flex flex-col h-full">
@@ -107,7 +107,7 @@ const Portfolio = () => {
                     </p>
                 </div>
                 <div className="bg-gray-50 px-5 py-3 flex-shrink-0 flex justify-end">
-                    <a href="https://github.com/savinadd/BookingSystem" className="bg-[#864879] text-red-100 scale-95 hover:scale-105 text-lg hover:bg-[#645280] py-2 px-4  rounded-full ">View project</a>
+                    <a href="https://github.com/savinadd/BookingSystem" className="bg-[#864879] text-red-100 text-center scale-95 hover:scale-105 text-lg hover:bg-[#645280] py-2 px-4  rounded-full ">View project</a>
                 </div>
             </div>
             

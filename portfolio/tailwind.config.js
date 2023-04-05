@@ -19,6 +19,10 @@ module.exports = {
         type: 'type 1.0s ease-out .8s 1 normal both',
         'type-reverse': 'type 1.8s ease-out 0s infinite alternate-reverse both',
       },
+      transitionDuration: {
+        '0': '0ms',
+        '2000': '2000ms',
+      },
       keyframes: {
         text: {
           '0%, 100%': {
