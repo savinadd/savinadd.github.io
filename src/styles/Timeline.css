@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.text{
+    margin:0;
+    padding-bottom: 5px;
+}
+.icons-py{
+    padding-top:10px;
+}
+.titles{
+    padding: 5px 0 20px 0;
+    font-size: 40px;
+    margin: 0;
+    color:#6F4564;
+}
+#title{
+    
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+}   

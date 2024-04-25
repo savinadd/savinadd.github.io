@@ -1,0 +1,43 @@
+/* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Catamaran&family=Cinzel:wght@600;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.navbar {
+  position: sticky;
+  top: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px; 
+  padding: 15px 0; 
+  background-color: transparent; 
+  z-index: 1;
+}
+
+
+
+.navbar-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-links {
+  padding-left: 30px;
+}
+
+.navbar-link {
+  color: #ADD8E6;
+  font-size: 23px;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  padding: 15px 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-link:hover {
+  background-color: transparent;
+  color: #FFFFFF;
+}
